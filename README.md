@@ -8,6 +8,14 @@
 
 &nbsp;
 
+&nbsp;
+
+**Carton** is a small library to help with storing and retrieving many buffers at the same time. This library was originally made to pack .obj models into a single file for distribution, taking advantage of GameMaker's buffer compression to additionally reduce the filesize of the models. **Carton** could be used for any number of things, not least storing and compressing localisation strings.
+
+&nbsp;
+
+&nbsp;
+
 ### `__carton_config()`
 
 *Returns:* N/A (`undefined`)
@@ -16,7 +24,7 @@
 |----|--------|-------|
 |None|        |       |
 
-This script holds macros that control the behaviour of Carton. `__carton_config()` never needs to be directly called in code, but the script and the macros it contains must be present in a project for Input to work.
+This script holds macros that control the behaviour of **Carton**. `__carton_config()` never needs to be directly called in code, but the script and the macros it contains must be present in a project for Input to work.
 
 **You should edit this script to customise Carton for your own purposes.**
 
