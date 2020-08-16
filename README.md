@@ -48,7 +48,7 @@ Cartons act like other native GameMaker data structures and must be [destroyed](
 
 |Name    |Datatype                         |Purpose                                                                      |
 |--------|---------------------------------|-----------------------------------------------------------------------------|
-|`carton`|[Carton](README.md#carton_create)|[Carton](README.md#carton_create) to destroy, freeing memory allocated for it|
+|`carton`|[carton](README.md#carton_create)|[carton](README.md#carton_create) to destroy, freeing memory allocated for it|
 
 &nbsp;
 
@@ -60,7 +60,7 @@ Cartons act like other native GameMaker data structures and must be [destroyed](
 
 |Name    |Datatype                         |Purpose                                    |
 |--------|---------------------------------|-------------------------------------------|
-|`carton`|[Carton](README.md#carton_create)|[Carton](README.md#carton_create) to target|
+|`carton`|[carton](README.md#carton_create)|[carton](README.md#carton_create) to target|
 
 &nbsp;
 
@@ -72,7 +72,7 @@ Cartons act like other native GameMaker data structures and must be [destroyed](
 
 |Name      |Datatype                         |Purpose                                            |
 |----------|---------------------------------|---------------------------------------------------|
-|`carton`  |[Carton](README.md#carton_create)|[Carton](README.md#carton_create) to target        |
+|`carton`  |[carton](README.md#carton_create)|[carton](README.md#carton_create) to target        |
 |`metadata`|string                           |Metadata string to be included alongside the buffer|
 |`buffer`  |[buffer](https://docs2.yoyogames.com/source/_build/1_overview/3_additional_information/using_buffers.html)|Buffer to add to the carton|
 |`[offset]`|integer                          |Offset of buffer data to add, in bytes. If not specified, `0` is used (the start of the buffer)|
@@ -88,7 +88,7 @@ Cartons act like other native GameMaker data structures and must be [destroyed](
 
 |Name    |Datatype                         |Purpose                                    |
 |--------|---------------------------------|-------------------------------------------|
-|`carton`|[Carton](README.md#carton_create)|[Carton](README.md#carton_create) to target|
+|`carton`|[carton](README.md#carton_create)|[carton](README.md#carton_create) to target|
 |`index` |integer                          |Carton buffer index to target              |
 
 &nbsp;
@@ -101,7 +101,7 @@ Cartons act like other native GameMaker data structures and must be [destroyed](
 
 |Name    |Datatype                         |Purpose                                    |
 |--------|---------------------------------|-------------------------------------------|
-|`carton`|[Carton](README.md#carton_create)|[Carton](README.md#carton_create) to target|
+|`carton`|[carton](README.md#carton_create)|[carton](README.md#carton_create) to target|
 |`index` |integer                          |Carton block index to target               |
 
 &nbsp;
@@ -114,7 +114,7 @@ Cartons act like other native GameMaker data structures and must be [destroyed](
 
 |Name      |Datatype                         |Purpose                                     |
 |----------|---------------------------------|--------------------------------------------|
-|`carton`  |[Carton](README.md#carton_create)|[Carton](README.md#carton_create) to target |
+|`carton`  |[carton](README.md#carton_create)|[carton](README.md#carton_create) to target |
 |`filename`|string                           |Filename to save the carton to              |
 |`compress`|boolean                          |Whether to compress the carton before saving|
 
@@ -128,7 +128,7 @@ Cartons act like other native GameMaker data structures and must be [destroyed](
 
 |Name        |Datatype                         |Purpose                                     |
 |------------|---------------------------------|--------------------------------------------|
-|`carton`    |[Carton](README.md#carton_create)|[Carton](README.md#carton_create) to target |
+|`carton`    |[carton](README.md#carton_create)|[carton](README.md#carton_create) to target |
 |`filename`  |string                           |Filename to save the carton to              |
 |`decompress`|boolean                          |Whether the file requires decompression     |
 
