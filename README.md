@@ -36,7 +36,7 @@ This script holds macros that control the behaviour of Carton. `__carton_config(
 |----|--------|-------|
 |None|        |       |
 
-Cartons act like other native GameMaker data structures and must be [destroyed]() after creation to free memory.
+Cartons act like other native GameMaker data structures and must be [destroyed](README.md#carton_destroy) after creation to free memory.
 
 &nbsp;
 
