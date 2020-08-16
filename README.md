@@ -20,7 +20,7 @@ This script holds macros that control the behaviour of Carton. `__carton_config(
 
 **You should edit this script to customise Carton for your own purposes.**
 
-|Name                         |Typical Value|Purpose                                      |
+|Macro                        |Typical Value|Purpose                                      |
 |-----------------------------|-------------|---------------------------------------------|
 |`CARTON_BUFFER_START_SIZE`   |`1024`       |Starting size of the buffer used for a carton|
 
@@ -35,6 +35,8 @@ This script holds macros that control the behaviour of Carton. `__carton_config(
 |Name|Datatype|Purpose|
 |----|--------|-------|
 |None|        |       |
+
+Cartons act like other native GameMaker data structures and must be [destroyed]() after creation to free memory.
 
 &nbsp;
 
