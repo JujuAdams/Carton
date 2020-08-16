@@ -72,9 +72,9 @@ This script holds macros that control the behaviour of Carton. `__carton_config(
 |----------|---------------------------------|---------------------------------------------------|
 |`carton`  |[Carton](README.md#carton_create)|[Carton](README.md#carton_create) to target        |
 |`metadata`|string                           |Metadata string to be included alongside the buffer|
-|`buffer`  |integer                          |Index of the buffer to add                         |
-|`[offset]`|integer                          |Offset of buffer data to add, in bytes             |
-|`[size]`  |integer                          |Size of the data to add, in bytes                  |
+|`buffer`  |[buffer](https://docs2.yoyogames.com/source/_build/1_overview/3_additional_information/using_buffers.html)|Buffer to add to the carton|
+|`[offset]`|integer                          |Offset of buffer data to add, in bytes. If not specified, `0` is used (the start of the buffer)|
+|`[size]`  |integer                          |Size of the data to add, in bytes. If not specified, the size of the buffer is used|
 
 &nbsp;
 
@@ -95,7 +95,7 @@ This script holds macros that control the behaviour of Carton. `__carton_config(
 
 ### `carton_get_buffer()`
 
-*Returns:* Buffer, a copy of the targetted carton block
+*Returns:* [Buffer](https://docs2.yoyogames.com/source/_build/1_overview/3_additional_information/using_buffers.html), a copy of the targetted carton block
 
 |Name    |Datatype                         |Purpose                                    |
 |--------|---------------------------------|-------------------------------------------|
