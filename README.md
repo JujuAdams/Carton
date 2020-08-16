@@ -20,9 +20,9 @@ This script holds macros that control the behaviour of Carton. `__carton_config(
 
 **You should edit this script to customise Carton for your own purposes.**
 
-|Macro                        |Typical Value|Purpose                                      |
-|-----------------------------|-------------|---------------------------------------------|
-|`CARTON_BUFFER_START_SIZE`   |`1024`       |Starting size of the buffer used for a carton|
+|Macro                        |Typical Value|Purpose                                                                 |
+|-----------------------------|-------------|------------------------------------------------------------------------|
+|`CARTON_BUFFER_START_SIZE`   |`1024`       |Starting size of the buffer used for a [carton](README.md#carton_create)|
 
 &nbsp;
 
