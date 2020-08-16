@@ -48,7 +48,7 @@ Cartons act like other native GameMaker data structures and must be [destroyed](
 
 |Name    |Datatype                         |Purpose                                                                      |
 |--------|---------------------------------|-----------------------------------------------------------------------------|
-|`carton`|[carton](README.md#carton_create)|[carton](README.md#carton_create) to destroy, freeing memory allocated for it|
+|`carton`|[carton](README.md#carton_create)|[Carton](README.md#carton_create) to destroy, freeing memory allocated for it|
 
 &nbsp;
 
