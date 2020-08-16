@@ -97,12 +97,12 @@ Cartons act like other native GameMaker data structures and must be [destroyed](
 
 ### `carton_get_buffer()`
 
-*Returns:* [Buffer](https://docs2.yoyogames.com/source/_build/1_overview/3_additional_information/using_buffers.html), a copy of the targetted carton block
+*Returns:* [Buffer](https://docs2.yoyogames.com/source/_build/1_overview/3_additional_information/using_buffers.html), a copy of the targetted carton buffer index
 
 |Name    |Datatype                         |Purpose                                    |
 |--------|---------------------------------|-------------------------------------------|
 |`carton`|[carton](README.md#carton_create)|[Carton](README.md#carton_create) to target|
-|`index` |integer                          |Carton block index to target               |
+|`index` |integer                          |Carton buffer index to target              |
 
 &nbsp;
 
