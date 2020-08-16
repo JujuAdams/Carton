@@ -168,7 +168,7 @@ Cartons act like other native GameMaker data structures and must be [destroyed](
 
 ### `carton_load()`
 
-*Returns:* A carton - a container for multiple buffers (array datatype) - that holds data loaded from the file specified
+*Returns:* [Carton](README.md#carton_create) that holds data loaded from the file specified
 
 |Name        |Datatype                         |Purpose                                     |
 |------------|---------------------------------|--------------------------------------------|
