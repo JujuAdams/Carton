@@ -46,7 +46,7 @@ This script holds macros that control the behaviour of Carton. `__carton_config(
 
 |Name    |Datatype  |Purpose                                               |
 |--------|----------|------------------------------------------------------|
-|`carton`|[Carton]()|Destroys a [carton](), freeing memory allocated for it|
+|`carton`|[Carton](README.md#carton_create)|Destroys a [carton](https://github.com/JujuAdams/Carton/blob/master/README.md#carton_create), freeing memory allocated for it|
 
 &nbsp;
 
