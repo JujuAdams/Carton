@@ -1,8 +1,12 @@
 {
-    "id": "bb3568a7-a44e-41cf-b27e-00dce41c59c1",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "carton_create",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Carton",
+    "path": "folders/Scripts/Carton.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "carton_create",
+  "tags": [],
+  "resourceType": "GMScript",
 }
