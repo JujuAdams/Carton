@@ -14,6 +14,6 @@ function carton_save(_carton, _filename, _compress)
 	}
 	else
 	{
-	    buffer_save(_buffer, _filename);
+	    buffer_save_ext(_buffer, _filename, 0, buffer_tell(_buffer));
 	}
 }
