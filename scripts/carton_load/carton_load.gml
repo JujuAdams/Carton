@@ -31,8 +31,16 @@ function carton_load(_filename, _decompress)
 	        {
 	            ds_list_add(_layout, buffer_tell(_buffer));
 	            var _metadata = buffer_read(_buffer, buffer_string); //Unusued in this script
-	            var _size = buffer_read(_buffer, buffer_u64);
-	            buffer_seek(_buffer, buffer_seek_relative, _size);
+                
+                //Fix old buffer format sometimes being improperly formatted
+                if (buffer_tell(_buffer) > _buffer_size - 4)
+                {
+                    show_debug_message("Carton: Warning! Prevented crash to due read outside the bounds of the buffer. Aborting");
+                    break;
+                }
+                
+    	        var _size = buffer_read(_buffer, buffer_u64);
+    	        buffer_seek(_buffer, buffer_seek_relative, _size);
 	        }
 	    break;
         
