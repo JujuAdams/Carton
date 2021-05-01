@@ -17,10 +17,11 @@ function carton_load(_filename, _decompress)
 	var _header_carton = buffer_read(_buffer, buffer_string);
 	if (_header_carton != "Carton @jujuadams") show_error("Carton:\nInvalid file format\n ", true);
 
-	var _layout = ds_list_create();
-	var _carton = array_create(eCarton.__Size, undefined);
-	_carton[eCarton.Buffer] = _buffer;
-	_carton[eCarton.Layout] = _layout;
+	var _layout = [];
+	var _carton = {
+    	buffer : _buffer,
+    	layout : _layout,
+    }
 
 	var _header_version = buffer_read(_buffer, buffer_string);
 	switch(_header_version)
@@ -29,7 +30,7 @@ function carton_load(_filename, _decompress)
 	    case "1.0.1":
 	        while(buffer_tell(_buffer) < _buffer_size)
 	        {
-	            ds_list_add(_layout, buffer_tell(_buffer));
+	            array_push(_layout, buffer_tell(_buffer));
 	            var _metadata = buffer_read(_buffer, buffer_string); //Unusued in this script
                 
                 //Fix old buffer format sometimes being improperly formatted
@@ -47,7 +48,7 @@ function carton_load(_filename, _decompress)
 	    case "1.0.2":
 	        while(buffer_tell(_buffer) < _buffer_size)
 	        {
-	            ds_list_add(_layout, buffer_tell(_buffer));
+	            array_push(_layout, buffer_tell(_buffer));
 	            var _metadata = buffer_read(_buffer, buffer_string); //Unusued in this script
 	            var _size = buffer_read(_buffer, buffer_u64);
 	            buffer_seek(_buffer, buffer_seek_relative, _size);

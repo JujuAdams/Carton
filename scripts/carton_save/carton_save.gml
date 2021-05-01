@@ -4,7 +4,7 @@
 
 function carton_save(_carton, _filename, _compress)
 {
-	var _buffer = _carton[eCarton.Buffer];
+	var _buffer = _carton.buffer;
 
 	if (_compress)
 	{

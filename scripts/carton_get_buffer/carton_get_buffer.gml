@@ -3,11 +3,11 @@
 
 function carton_get_buffer(_carton, _index)
 {
-	var _carton_buffer = _carton[eCarton.Buffer];
-	var _carton_layout = _carton[eCarton.Layout];
+	var _carton_buffer = _carton.buffer;
+	var _carton_layout = _carton.layout;
 
 	var _old_tell = buffer_tell(_carton_buffer);
-	var _tell = _carton_layout[| _index];
+	var _tell = _carton_layout[_index];
 	if (_tell == undefined) show_error("Carton:\nIndex out of range (" + string(_index) + ")\n ", true);
 
 	buffer_seek(_carton_buffer, buffer_seek_start, _tell);

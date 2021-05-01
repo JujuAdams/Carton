@@ -4,8 +4,8 @@ function carton_create()
 	buffer_write(_buffer, buffer_string, "Carton @jujuadams");
 	buffer_write(_buffer, buffer_string, __CARTON_VERSION);
 
-	var _carton = array_create(eCarton.__Size);
-	_carton[@ eCarton.Buffer] = _buffer;
-	_carton[@ eCarton.Layout] = ds_list_create();
-	return _carton;
+	return {
+	    buffer : _buffer,
+	    layout : [],
+    };
 }
