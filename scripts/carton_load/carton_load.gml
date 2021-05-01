@@ -1,10 +1,8 @@
 /// @param filename
 /// @param decompress
-function carton_load(argument0, argument1) {
 
-	var _filename   = argument0;
-	var _decompress = argument1;
-
+function carton_load(_filename, _decompress)
+{
 	var _buffer = buffer_load(_filename);
 
 	if (_decompress)
@@ -37,13 +35,21 @@ function carton_load(argument0, argument1) {
 	            buffer_seek(_buffer, buffer_seek_relative, _size);
 	        }
 	    break;
+        
+	    case "1.0.2":
+	        while(buffer_tell(_buffer) < _buffer_size)
+	        {
+	            ds_list_add(_layout, buffer_tell(_buffer));
+	            var _metadata = buffer_read(_buffer, buffer_string); //Unusued in this script
+	            var _size = buffer_read(_buffer, buffer_u64);
+	            buffer_seek(_buffer, buffer_seek_relative, _size);
+	        }
+	    break;
     
 	    default:
-	        show_error("Carton:\nUnsupported version (" + string(_header_version) + "\n ", true);
+	        show_error("Carton:\nUnsupported version (" + string(_header_version) + ")\n ", true);
 	    break;
 	}
 
 	return _carton;
-
-
 }

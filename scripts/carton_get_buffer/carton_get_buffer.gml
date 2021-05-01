@@ -1,10 +1,8 @@
 /// @param carton
 /// @param index
-function carton_get_buffer(argument0, argument1) {
 
-	var _carton = argument0;
-	var _index = argument1;
-
+function carton_get_buffer(_carton, _index)
+{
 	var _carton_buffer = _carton[eCarton.Buffer];
 	var _carton_layout = _carton[eCarton.Layout];
 
@@ -20,6 +18,4 @@ function carton_get_buffer(argument0, argument1) {
 	buffer_seek(_carton_buffer, buffer_seek_start, _old_tell);
 
 	return _buffer;
-
-
 }

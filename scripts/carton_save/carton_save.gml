@@ -1,12 +1,9 @@
 /// @param carton
 /// @param filename
 /// @param compress
-function carton_save(argument0, argument1, argument2) {
 
-	var _carton   = argument0;
-	var _filename = argument1;
-	var _compress = argument2;
-
+function carton_save(_carton, _filename, _compress)
+{
 	var _buffer = _carton[eCarton.Buffer];
 
 	if (_compress)
@@ -19,6 +16,4 @@ function carton_save(argument0, argument1, argument2) {
 	{
 	    buffer_save(_buffer, _filename);
 	}
-
-
 }

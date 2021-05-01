@@ -23,8 +23,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "carton",
+    "path": "carton.yyp",
   },
   "resourceVersion": "1.0",
   "name": "obj_test",

@@ -3,8 +3,9 @@
 /// @param buffer
 /// @param [offset]
 /// @param [size]
-function carton_add() {
 
+function carton_add()
+{
 	var _carton   = argument[0];
 	var _metadata = argument[1];
 	var _buffer   = argument[2];
@@ -26,6 +27,4 @@ function carton_add() {
 
 	buffer_copy(_buffer, _offset, _size, _carton_buffer, buffer_tell(_carton_buffer));
 	buffer_seek(_carton_buffer, buffer_seek_relative, _size);
-
-
 }

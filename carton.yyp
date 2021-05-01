@@ -9,8 +9,8 @@
     {"id":{"name":"carton_get_buffer","path":"scripts/carton_get_buffer/carton_get_buffer.yy",},"order":13,},
     {"id":{"name":"carton_save","path":"scripts/carton_save/carton_save.yy",},"order":15,},
     {"id":{"name":"carton_load","path":"scripts/carton_load/carton_load.yy",},"order":17,},
-    {"id":{"name":"obj_test","path":"objects/obj_test/obj_test.yy",},"order":1,},
-    {"id":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},"order":1,},
+    {"id":{"name":"obj_test","path":"objects/obj_test/obj_test.yy",},"order":3,},
+    {"id":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},"order":4,},
   ],
   "Options": [
     {"name":"Windows UWP","path":"options/windowsuap/options_windowsuap.yy",},
@@ -38,10 +38,7 @@
     {"roomId":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
   ],
   "Folders": [
-    {"folderPath":"folders/Scripts.yy","order":1,"resourceVersion":"1.0","name":"Scripts","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Scripts/Carton.yy","order":1,"resourceVersion":"1.0","name":"Carton","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Objects.yy","order":3,"resourceVersion":"1.0","name":"Objects","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Rooms.yy","order":5,"resourceVersion":"1.0","name":"Rooms","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Carton.yy","order":0,"resourceVersion":"1.0","name":"Carton","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
