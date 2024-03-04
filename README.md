@@ -4,8 +4,6 @@
 
 <p align="center"><b>@jujuadams</b></p>
 
-<p align="center">Chat about Carton on the <a href="https://discord.gg/8krYCqr">Discord server</a></p>
-
 &nbsp;
 
 &nbsp;
